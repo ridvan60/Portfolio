@@ -1,0 +1,78 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* .project-item{
+    text-align: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.project-item#blur.active{
+    filter: blur(10px);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: antiquewhite;
+}
+
+#Popup{
+    top: 40%;
+    text-align: center;
+    justify-content: center;
+    background-color: blueviolet;
+    transition: 0.5;
+    visibility: hidden;
+}
+
+Popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}*/
+
+/* Anfangszustand: Popup unsichtbar */
+/* Grundzustand */
+#main-content.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.popup {
+  display: none;
+  position: fixed; /* über dem ganzen Inhalt */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1000;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  max-width: 90%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.popup.active {
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+img{
+    width: 240px;
+}
+
+

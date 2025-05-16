@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    
+
+    <!-- <div class="project-item" id="blur">
+        <a href="#" onclick="toggle()">
+            <img src="img/serverman.png" alt="">
+            <h3>Server-Man</h3>
+            <p>Linux-Server Überwachungssystem</p>
+        </a>    
+    </div>
+    <div id="Popup">
+        <img src="img/serverman.png" alt="">
+        <h3>Server-Man</h3>
+        <p>Hier kommt dann eine schöne Beschreibung des Projekts</p>
+        <p>ipsum dolor sit, amet consectetur adipisicing elit. Laudantium et vero unde necessitatibus rerum assumenda labore repellendus facere mollitia soluta quidem in aut incidunt aliquam delectus, ipsa commodi deserunt veritatis.</p>
+        <button onclick="toggle()">Schließen</button>
+    </div>
+
+    <div class="project-item" id="blur">
+        <a href="#" onclick="toggle()">
+            <img src="img/serverman.png" alt="">
+            <h3>Server-Man</h3>
+            <p>Linux-Server Überwachungssystem</p>
+        </a>    
+    </div>
+    <div id="Popup">
+        <img src="img/serverman.png" alt="">
+        <h3>Server-Man</h3>
+        <p>Hier kommt dann eine schöne Beschreibung des Projekts</p>
+        <p>ipsum dolor sit, amet consectetur adipisicing elit. Laudantium et vero unde necessitatibus rerum assumenda labore repellendus facere mollitia soluta quidem in aut incidunt aliquam delectus, ipsa commodi deserunt veritatis.</p>
+        <button onclick="toggle()">Schließen</button>
+    </div> -->
+
+
+    <!-- Deine Projekte -->
+    <div id="main-content">
+        <div class="project-item" data-id="1">
+            <a href="#" class="toggle-btn" data-id="1">
+                <img src="img/serverman.png" alt="">
+                <h3>Server-Man</h3>
+                <p>Linux-Server Überwachungssystem</p>
+            </a>
+        </div>
+
+        <div class="project-item" data-id="2">
+            <a href="#" class="toggle-btn" data-id="2">
+                <img src="img/Atlassian_Confluence_2017_logo.svg.png" alt="">
+                <h3>Web-App</h3>
+                <p>Eine moderne Webanwendung</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Popups, am besten außerhalb der project-items -->
+    <div class="popup" data-id="1">
+        <button class="close-btn">Schließen ✖</button>
+        <h3>Server-Man</h3>
+        <p>Beschreibung für Projekt 1</p>
+    </div>
+
+    <div class="popup" data-id="2">
+        <button class="close-btn">Schließen ✖</button>
+        <h3>Web-App</h3>
+        <p>Beschreibung für Projekt 2</p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+
+</html>
