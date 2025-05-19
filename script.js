@@ -1,6 +1,7 @@
 'use strict';
 
 
+console.log("script.js wurde geladen!");
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -82,7 +83,7 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
-    if (selectedValue === "all") {
+    if (selectedValue === "alle") {
       filterItems[i].classList.add("active");
     } else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
@@ -93,6 +94,14 @@ const filterFunc = function (selectedValue) {
   }
 
 }
+
+function popup()
+{
+  var popup = document.getElementsByClassName("project-item");
+  popup.classList.toggle("show")
+
+}
+
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -143,19 +152,20 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    for (let j = 0; j < pages.length; j++) { // Innere Schleife bekommt "j"
-      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
-        pages[j].classList.add("active");
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[j].classList.remove("active");
+        pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
     }
+
   });
 }
-
 
 // experience-calculator.js
 
@@ -171,11 +181,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let duration = ""
     if (years > 0) {
-      duration += `${years} yr${years > 1 ? "s" : ""}`
+      duration += `${years} Jahr${years > 1 ? "e" : ""}`
     }
     if (months > 0) {
       if (duration) duration += ", "
-      duration += `${months} mo${months > 1 ? "s" : ""}`
+      duration += `${months} Monat${months > 1 ? "e" : ""}`
     }
     return duration
   }
@@ -278,6 +288,8 @@ document.addEventListener("DOMContentLoaded", () => {
       })
   })
 })
+
+// #### popup ####
 
 
 
