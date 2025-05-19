@@ -1007,7 +1007,7 @@ main {
   100% { transform: scale(1); }
 }
 
-.project-item > a { width: 100%; }
+.project-item > li { width: 100%; }
 
 .project-img {
   position: relative;
@@ -1030,7 +1030,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > li:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1049,7 +1049,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item > li:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1063,7 +1063,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img { transform: scale(1.1); }
+.project-item > li:hover img { transform: scale(1.1); }
 
 .project-title,
 .project-category { margin-left: 10px; }
@@ -1357,6 +1357,11 @@ textarea.form-input::-webkit-resizer {
 
 @media (min-width: 450px) {
 
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
   /**
    * client
    */
@@ -1515,10 +1520,15 @@ textarea.form-input::-webkit-resizer {
   .about-text { margin-bottom: 40px; }
 
   /* service */
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
   .service-item {
-    /* display: flex; */
-    /* justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start;
     align-items: flex-start; */
     gap: 18px;
     padding: 30px;
@@ -2189,4 +2199,53 @@ textarea.form-input::-webkit-resizer {
     margin-left: 15px;
     margin-bottom: 15px;
     text-align: center;
+  }
+
+
+  /**
+   * Popup
+   */
+  button{
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px 25px;
+  }
+  button:active{
+    opacity: 0.8;
+  }
+   .popup{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popup.open{
+    opacity: 1;
+    z-index: 999;
+
+  }
+  .popup-inner{
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .popup-inner h2{
+    margin: 0;
+  }
+
+  .popup-inner p{
+    line-height: 24px;
+    margin: 10px 0;
+  }
+  .popup button{
+    color: black;
   }
