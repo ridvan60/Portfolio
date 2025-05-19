@@ -7,7 +7,6 @@
   <title>Ridvan Sahin - Portfolio</title>
   
   <link rel="stylesheet" href="style.css">
-  <link rel="scripts" href="script.js">
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
@@ -163,11 +162,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Über mich</button>
+            <button class="navbar-link  active" data-nav-link>Profil</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Ausbildung & Erfahrung</button>
+            <button class="navbar-link" data-nav-link>Lebenslauf</button>
           </li>
 
           <li class="navbar-item">
@@ -175,7 +174,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Hobbies</button>
+            <button class="navbar-link" data-nav-link>Hobbys</button>
           </li>
 
           <li class="navbar-item">
@@ -194,10 +193,10 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="profil">
 
         <header>
-          <h2 class="h2 article-title">Über mich</h2>
+          <h2 class="h2 article-title">Profil</h2>
         </header>
 
         <section class="about-text">
@@ -465,7 +464,7 @@
           - testimonials modal
         -->
 
-         <!-- <div class="modal-container" data-modal-container>
+         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
@@ -477,10 +476,10 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <!-- <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img> -->
               </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              <!-- <img src="./assets/images/icon-quote.svg" alt="quote icon"> -->
             </div>
 
             <div class="modal-content">
@@ -503,7 +502,7 @@
 
           </section>
 
-        </div> -->
+        </div>
 
 
         <!--
@@ -570,10 +569,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="Lebenslauf" data-page="lebenslauf">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Lebenslauf</h2>
         </header>
 
         <section class="timeline">
@@ -582,21 +581,21 @@
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Ausbildung</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Nihareeka College of Management and Information Technology</h4>
-              <p class="timeline-text">Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)</p>
-              <span>2017 — 2021</span>
+              <h4 class="h4 timeline-item-title">(M. Eng.) Systems Engineering Advanced Computing</h4>
+              <p class="timeline-text">Hochschule Albstadt-Sigmaring, Campus Albstadt</p>
+              <span>03/2023 — vsl. 07/2025</span>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Greenland International College</h4>
-              <p class="timeline-text">+2 Science</p>
-              <span>2015 — 2017</span>
+              <h4 class="h4 timeline-item-title">(B. Sc.) Automatisierungstechnik und Elektro-Maschinenbau</h4>
+              <p class="timeline-text">Hochschule Heilbronn, Campus Künzelsau</p>
+              <span>10/2018 — 03/2023</span>
             </li>
 
           </ol>
@@ -607,60 +606,56 @@
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase"></ion-icon>
             </div>
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Erfahrung</h3>
           </div>
         
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Mid-Level Flutter Developer</h4>
-              <p class="timeline-text">Tokma Technologies</p>
-              <span data-start-date="2024-07-01" data-end-date="present">Aug, 2024 — Present &nbsp; &#8226; <span class="duration"></span>
-              <p class="timeline-text"><i>Kathmandu, Nepal</i></p>
+              <h4 class="h4 timeline-item-title">Praktikum & Masterarbeit in der Digitalisierung</h4>
+              <p class="timeline-text">Xomox International GmbH & Co.</p>
+              <span data-start-date="2024-06-01" data-end-date="present">07/2024 — aktuell &nbsp; &#8226; <span class="duration"></span>
+              <p class="timeline-text"><i>Lindau, Bayern, Deutschland</i></p>
               <ul class="timeline-text">
-                <li>Developed new features and implemented UI designs into code using Flutter.</li>
-                <li>Designed and created custom e-form features including scrolling features and data entries.</li>
-                <li>Integrated Google and Facebook sign-in for user authentication.</li>
-                <li>Designed dynamic functionalities using the BLOC design pattern.</li>
-                <li>Integrated APIs for seamless data communication and backend functionality.</li>
-                <li>Implemented payment gateway integration like Khalti for secure transactions.</li>
-                <li>Collaborated with other developers and backend team to deliver features.</li>
-                <li>Participated in team meetings to discuss new features and project updates.</li>
-                <li>Ensured smooth functionality and user-friendly experiences throughout the app.</li>
-                <li>Performed code review and deployed the app in Playstore and Appstore.</li>
+                <li>Ermittlung/Visualisierung der Maschinen- und Ressourcenwerte auf Dashboards mit SPS-Programmierung und Python</li>
+                <li>Konzeptionierung und Anschluss der elektro- und netzwerktechnische Verbindungen</li>
+                <li>Fernüberwachung der Wartungen und Fehlermeldung, welche ebenso auf den Dashboards angezeigt und per LEDs an den Maschinen visualisiert werden</li>
+                <li>Erweiterung der bestehende Unternehmenswebseite in PHP</li>
+                <li>Vernetzung der Geräte / IoT</li>
               </ul>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Flutter Developer</h4>
-              <p class="timeline-text">Inflancer Technology</p>
-              <span data-start-date="2022-09-01" data-end-date="2024-08-01">Oct, 2022 — Aug, 2024 &nbsp; &#8226; <span class="duration"></span></span>
-              <p class="timeline-text"><i>Kathmandu, Nepal</i></p>
+              <h4 class="h4 timeline-item-title">Werkstudent im Customer Self Service</h4>
+              <p class="timeline-text">Bosch eBike System</p>
+              <span data-start-date="2023-07-01" data-end-date="2024-06-30">07/2023 — 06/2024 &nbsp; &#8226; <span class="duration"></span></span>
+              <p class="timeline-text"><i>Kusterdingen, Baden-Württemberg, Deutschland</i></p>
               <ul class="timeline-text">
-                <li>Developed new features and transformed UI designs into fully functional user interfaces.</li>
-                <li>Integrated payment solution like eSewa, for secure and seamless transactions.</li>
-                <li>Optimized application performance to ensure a smooth and engaging user experience.</li>
-                <li>Supported other team members initiatives by developing solutions to common problems and sharing those solutions.</li>
-                <li>Identified and resolved bugs, improving app stability and performance.</li>
-                <li>Wrote clean, maintainable, and testable code following best practices.</li>
-                <li>Utilization of latest version of support libraries to ensure backend compatibility.</li>
-                <li>Integrated payment solution like eSewa, for secure and seamless transactions.</li>
-                <li>Collaborated with backend developers, designers, and cross-functional teams to deliver scalable, high-quality solutions.</li>
-                <li>Performed code review and deployed the app in Playstore and Appstore.</li>
+                <li>iOS und Android App-Testing der neuen Funktionen</li>
+                <li>Unterstützung bei funktionalen und inhaltlichen Entwicklungen im Help-Center</li>
               </ul>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Flutter Developer Intern</h4>
-              <p class="timeline-text">YAJ Tech Pvt. Ltd</p>
-              <span data-start-date="2022-04-01" data-end-date="2022-09-01">May, 2022 — Sep, 2022 &nbsp; &#8226; <span class="duration"></span></span>
-              <p class="timeline-text"><i>Kathmandu, Nepal</i></p>
+              <h4 class="h4 timeline-item-title">Bachelorarbeit im Bereich DevOps</h4>
+              <p class="timeline-text">Bosch Engineering GmbH</p>
+              <span data-start-date="2022-11-01" data-end-date="2023-03-31">11/2022 — 03/2023 &nbsp; &#8226; <span class="duration"></span></span>
+              <p class="timeline-text"><i>Abstatt, Baden-Württemberg, Deutschland</i></p>
               <ul class="timeline-text">
-                <li>Assisted in developing and maintaining Flutter applications, ensuring seamless functionality and user-friendly interfaces.</li>
-                <li>Supported the implementation of visually appealing UI designs that aligned with client requirements and design principles.</li>
-                <li>Collaborated with cross-functional teams, including back-end developers and designers, to deliver efficient, high-quality, and scalable solutions.</li>
-                <li>Gained hands-on experience in debugging, troubleshooting, and refining app features to improve user experience.</li>
+                <li>Konzeptionierung und Erstellung eines DevOps-Trainings</li>
+                <li>Vorbereitung eines IT-Trainings in Python/Micropython</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Praktukum als Software Engineer</h4>
+              <p class="timeline-text">Bosch Engineering GmbH</p>
+              <span data-start-date="2022-03-15" data-end-date="2022-09-15">03/2022 — 09/2022 &nbsp; &#8226; <span class="duration"></span></span>
+              <p class="timeline-text"><i>Abstatt, Baden-Württemberg, Deutschland</i></p>
+              <ul class="timeline-text">
+                <li>Erstellung von Bots zur Prozessautomatisierung mit Automation Anywhere und Catalytics</li>
+                <li>Webshop-Entwicklungen mit unternehmensinternen Programmen</li>
               </ul>
             </li>
 
@@ -685,9 +680,9 @@
         </section>
         
 
-        <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/cv/flutter_aakash.pdf')">
+        <button class="form-btn" type="button" data-form-btn onclick="window.open()">
           <ion-icon name="document-text-outline"></ion-icon>
-          <span>Download CV</span>
+          <span>Lebenslauf öffnen</span>
         </button>
 
 
@@ -793,13 +788,13 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #Projects
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projekte">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projekte</h2>
         </header>
 
         <section class="projects">
@@ -807,7 +802,7 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn>Alle</button>
             </li>
 
             <li class="filter-item">
@@ -839,7 +834,7 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item>Alle</button>
               </li>
 
               <li class="select-item">
@@ -861,6 +856,29 @@
 
 
           <ul class="project-list">
+
+            <li class="project-item active" onclick="popup()">Teste hier
+              <span>Test to Pop-Up</span>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/nagarikapp.png" alt="Nagarik App" loading="lazy">
+              </figure>
+              <h3 class="project-title">Nagarik App</h3>
+              <p class="project-category">Application</p>
+            </li>
+
+
+
+
+
+
+
 
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://nagarikapp.gov.np/" target="_blank">
@@ -1092,13 +1110,13 @@
 
 
       <!--
-        - #BLOG
+        - #Hobbys
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="hobbys">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Hobbys</h2>
         </header>
 
         <section class="blog-posts">
@@ -1164,7 +1182,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="kontakt">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -1238,7 +1256,8 @@
 
     <div id="toast" class="toast"></div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script data-cfasync="false" src="email-decode.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
        </article>
 
     </div>
@@ -1246,7 +1265,7 @@
   </main>
 
   <!-- ### letzter Stand ### -->
-  <div class="stand">letzter Aktualisierungsdatum: 09. Mai 2025</div>
+  <div class="stand">letzter Aktualisierungsdatum: 22. Mai 2025</div>
 
 
 
@@ -1264,7 +1283,7 @@
   <!--
     - experience calculator
   -->
-  <script src="./assets/js/experience-calculator.js"></script>
+  <!-- <script src="experience-calculator.js"></script> -->
 
 <!-- 
 - chatbot 
