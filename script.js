@@ -95,8 +95,7 @@ const filterFunc = function (selectedValue) {
 
 }
 
-function popup()
-{
+function popup() {
   var popup = document.getElementsByClassName("project-item");
   popup.classList.toggle("show")
 
@@ -290,14 +289,27 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // #### popup ####
-    function openPopup(id) {
-        document.getElementById(id).style.display = "block";
-        document.getElementById("backdrop").style.display = "block";
-    }
+function openPopup(id) {
+  document.getElementById(id).style.display = "block";
+  document.getElementById("backdrop").style.display = "block";
+}
 
-    function closePopup(id) {
-        document.getElementById(id).style.display = "none";
-          document.getElementById("backdrop").style.display = "none";
-    }
+function closePopup(id) {
+  document.getElementById(id).style.display = "none";
+  document.getElementById("backdrop").style.display = "none";
+}
 
+// invisible sidebar Information
+
+document.querySelectorAll('[data-nav-link]').forEach(link => {
+  link.addEventListener('click', () => {
+    const sidebar = document.querySelector('.sidebar-info_more');
+
+    if (link.textContent.trim() === 'Kontakt') {
+      sidebar.style.display = 'none';
+    } else {
+      sidebar.style.display = 'block';
+    }
+  });
+});
 

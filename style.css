@@ -377,6 +377,11 @@ main {
 
 .info_more-btn span { display: none; }
 
+.avatar-box img { 
+  width: 50px;
+  border-radius: 10px; 
+}
+
 .sidebar-info_more {
   opacity: 0;
   visibility: hidden;
@@ -388,7 +393,7 @@ main {
   visibility: visible;
 }
 
-.contacts-list {
+.contacts-list, .contacts-list_V2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
@@ -1501,7 +1506,7 @@ textarea.form-input::-webkit-resizer {
 
   .separator { margin: 32px 0; }
 
-  .contacts-list { gap: 20px; }
+  .contacts-list, .contacts-list_V2  { gap: 20px; }
 
   .contact-info {
     max-width: calc(100% - 64px);
@@ -1714,7 +1719,7 @@ textarea.form-input::-webkit-resizer {
    * SIDEBAR
    */
 
-  .contacts-list {
+  .contacts-list, .contacts-list_V2  {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
@@ -1948,9 +1953,12 @@ textarea.form-input::-webkit-resizer {
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  .sidebar { min-width: 275px; }
 
-  article { min-height: 100%; }
+  article { 
+    min-height: 100%;
+    width: auto;
+  }
 
 
 
@@ -2008,6 +2016,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .contacts-list { grid-template-columns: 1fr; }
+  .contacts-list_V2 { grid-template-columns: 1fr 1fr; }
 
   .contact-info :is(.contact-link) {
     white-space: nowrap;
