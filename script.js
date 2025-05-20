@@ -290,6 +290,14 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // #### popup ####
+    function openPopup(id) {
+        document.getElementById(id).style.display = "block";
+        document.getElementById("backdrop").style.display = "block";
+    }
 
+    function closePopup(id) {
+        document.getElementById(id).style.display = "none";
+          document.getElementById("backdrop").style.display = "none";
+    }
 
 
