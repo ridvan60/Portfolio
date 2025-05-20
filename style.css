@@ -1053,7 +1053,7 @@ main {
 .filter-select-box {
   position: relative;
   margin-bottom: 25px;
-  opacity: 0;
+  display: none;
 }
 
 .filter-select {
