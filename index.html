@@ -881,7 +881,7 @@
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="" alt="Testbild">
+                <img src="img/Laermampel.png" alt="Testbild">
               </figure>
               <h3 class="project-title">Lärmampel</h3>
             </li>
@@ -891,9 +891,10 @@
           <div id="popup1" class="popup">
             <h2>Server-Man</h2>
             <h4>Ein Verwaltungssystem für Linux-Server</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe iusto odio laudantium provident molestiae
-              ea porro obcaecati libero! Tempore nisi praesentium repellat eveniet molestias sed provident ex doloribus
-              earum nobis.</p>
+            <p>Es wurde eine Webpage erstellt, welche eine Liste von den Servern
+              beinhaltet. Als Option zur Verwaltung können neue Server hinzugefügt oder die bestehenden entfernt oder
+              bearbeitet werden. Zusätzlich wurde in einer Detailansicht Informationen wie CPU-Auslastung, RAM, SWAP und
+              weiteres graphisch visualisiert. Als eine Extrafunktion wurde ein Terminal für die Befehle integriert.</p>
             <br>
             <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
             <br>
@@ -902,39 +903,58 @@
 
           <div id="popup2" class="popup">
             <h2>Wetterstation</h2>
-            <p>Eine Wetterstation zur Überwachung der Temperatur, Luftfeuchtigkeit und Luftdruck</p>
-            <p>Wetterstation Beschreibung</p>
+            <h4>Eine Wetterstation zur Überwachung der Temperatur, Luftfeuchtigkeit und Luftdruck</h4>
+            <p>Ein Sensor, welches auf einer ESP32-S integriert wurde, empfängt die Wetterdaten (Temperatur,
+              Luftfeuchtigkeit und -druck). Die Informationen
+              werden in einer Datenbank gespeichert und auf der Webseite Grafana
+              visualisiert. Dabei wurde ebenso auf die Verschlüsseln geachtet.
+            </p>
             <br>
-            <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
+            <span><b>Rolle: </b>elektrischer Aufbau der ESP32, Rasperry Pi und Display. MQTT-
+              Verbindung in Python</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup2')">Schließen</button>
           </div>
 
           <div id="popup3" class="popup">
             <h2>Poppy Humanoid</h2>
-            <p>Steuerung von Poppy Humanoid</p>
+            <h4>Steuerung von Poppy Humanoid</h4>
+            <p>Es wurde darauf gezielt, dass der Roboter bestimmte Objekte im Raum
+              erkennt und seine Motoren so gesteuert werden, dass dieser mit der Hand
+              auf diese zeigen kann. Allerdings ist dieses Projekt gescheitert, da der
+              Roboter mit großen mechanischen Problemen zu kämpfen hatte. Es wurde somit ein neues Ziel definiert, bei der der Poppy Humanoid reine Bilderkennung durchführt und diese analysiert (Doppelpendel)
+            </p>
             <br>
-            <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
+            <span><b>Rolle: </b>Programmierung der Bilderkennung und der Steuerung in Python openCv</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup3')">Schließen</button>
           </div>
 
           <div id="popup4" class="popup">
             <h2>Lärmampel</h2>
-            <p>Eine LED-Anzeige im Ampelsystem abhängig von der Lautstärke</p>
-            <p>Beschreibung Lärmampel</p>
+            <h4>Eine LED-Anzeige im Ampelsystem abhängig von der Lautstärke</h4>
+            <p>Ein selbstgebauter Ampel, ausgestattet mit LEDs, konnte mittels eines
+              Mikrofons Geräusche aufnehmen. Nach Höhe des Dezibelzahls leuchtet
+              die Ampel rot, gelb oder grün. Hierzu wurden die Platinen der LEDs designt und erstellt. Die Funktion
+              wurde in Python und die LEDs in Arduino programmiert.
+
+            </p>
             <br>
-            <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
+            <span><b>Rolle: </b>Python- und Arduino-Programmierung mit Pair-Programming und Platinen-Design für die
+              LEDs</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup4')">Schließen</button>
           </div>
 
           <div id="popup5" class="popup">
-            <h2>To-do App</h2>
-            <p>Eine LED-Anzeige im Ampelsystem abhängig von der Lautstärke</p>
-            <p>Beschreibung Lärmampel</p>
+            <h2>To-Do App</h2>
+            <h4>Erstellung einer To-Do Web-Applikation</h4>
+            <p>Der Backend, der Webserver, wurde mittels Python Flask eingerichtet und die Frontend-Entwicklung mit
+              HTML/CSS/JavaScript gefertigt. Die App fungiert als eine klassische To-Do Applikation, in der Aufgaben
+              eingefügt, gelöscht oder als fertig markiert werden können. Die Daten wurden in der Datenbank mit MySQL
+              gespeichert.</p>
             <br>
-            <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
+            <span><b>Rolle: </b>Python Flask, Datenspeicherung mit MySQL und HTML/CSS/JavaScript</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup5')">Schließen</button>
           </div>
