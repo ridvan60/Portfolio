@@ -313,3 +313,15 @@ document.querySelectorAll('[data-nav-link]').forEach(link => {
   });
 });
 
+// Hobby
+
+document.querySelectorAll(".hobby-card").forEach(card => {
+    let bgImage = card.getAttribute("data-background");
+    if (bgImage) {
+        card.style.backgroundImage = `url(${bgImage})`; // Direkt setzen!
+    }
+});
+
+
+
+
