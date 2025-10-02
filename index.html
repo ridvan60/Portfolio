@@ -203,7 +203,8 @@
         <section class="about-text">
           <p>
             Mit meinem ingenieurwissenschaftlichen Hintergrund und meinem Master in Systems Engineering vereine ich
-            technisches Know-how mit fundierter IT-Fachkompetenz. Besonders in den Bereichen IT-Infrastruktur, (Web-)Entwicklung,
+            technisches Know-how mit fundierter IT-Fachkompetenz. Besonders in den Bereichen IT-Infrastruktur,
+            (Web-)Entwicklung,
             Digitalisierung und Datenbanken konnte ich bereits wertvolle Erfahrungen sammeln. Meine schnelle
             Auffassungsgabe und meine hohe Lernbereitschaft haben sich in ersten praktischen Anwendungen bewährt, und
             ich bin motiviert, mein Wissen kontinuierlich zu erweitern. Durch meine agile Arbeitsweise und
@@ -685,8 +686,6 @@
 
 
 
-
-
       <!--
         - #Projects
       -->
@@ -698,7 +697,20 @@
         </header>
 
         <section class="projects">
-
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Alle</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Beruf</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Universität</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Privat</button>
+            </li>
+          </ul>
 
           <div class="filter-select-box">
 
@@ -711,15 +723,12 @@
               </div>
 
             </button>
-
-
-
           </div>
 
           <div class="backdrop" id="backdrop"></div>
           <ul class="project-list">
 
-            <li class="project-item  active" onclick="openPopup('popup5')">
+            <li class="project-item  active" data-filter-item data-category="privat" onclick="openPopup('popup5')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -729,7 +738,7 @@
               <h3 class="project-title">Todo Web-Applikation</h3>
             </li>
 
-            <li class="project-item  active" onclick="openPopup('popup1')">
+            <li class="project-item  active" data-filter-item data-category="universität" onclick="openPopup('popup1')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -739,10 +748,7 @@
               <h3 class="project-title">Server-Man</h3>
             </li>
 
-
-
-
-            <li class="project-item  active" onclick="openPopup('popup2')">
+            <li class="project-item  active" data-filter-item data-category="universität" onclick="openPopup('popup2')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -752,7 +758,7 @@
               <h3 class="project-title">Wetterstation</h3>
             </li>
 
-            <li class="project-item  active" onclick="openPopup('popup3')">
+            <li class="project-item  active" data-filter-item data-category="universität" onclick="openPopup('popup3')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -762,7 +768,7 @@
               <h3 class="project-title">Poppy Humanoid</h3>
             </li>
 
-            <li class="project-item  active" onclick="openPopup('popup4')">
+            <li class="project-item  active" data-filter-item data-category="universität" onclick="openPopup('popup4')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
@@ -848,12 +854,9 @@
             <button class="form-btn" onclick="closePopup('popup5')">Schließen</button>
           </div>
 
-
-
         </section>
 
       </article>
-
 
       <!--
         - #Hobbys
@@ -1131,7 +1134,7 @@
   </main>
 
   <!-- ### letzter Stand ### -->
-  <div class="stand">letzter Aktualisierungsdatum: 29. August 2025</div>
+  <div class="stand">letzter Aktualisierungsdatum: 02. Oktober 2025</div>
 
 
 

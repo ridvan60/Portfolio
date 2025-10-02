@@ -1121,7 +1121,7 @@ main {
 }
 
 .project-item {
-  /* display: none;  */
+  display: none;
   animation: scaleUp 0.25s ease forwards;
 }
 
@@ -1129,10 +1129,10 @@ main {
   text-align: center;
 }
 
-/* .project-item.active {
+.project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
-} */
+}
 
 @keyframes scaleUp {
   0% {
