@@ -2530,6 +2530,9 @@ textarea.form-input::-webkit-resizer {
   top: 50%;
   left: 50%;
   width: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: auto;
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
@@ -2569,7 +2572,16 @@ textarea.form-input::-webkit-resizer {
   color: var(--white-2);
 }
 
+.popup img {
+  padding: 12px;
+  max-width: 730px;
+  height: auto;
+}
 
+.popup li{
+  margin: 8px;
+  list-style-type: disc;
+}
 
 .backdrop {
   display: none;

@@ -331,6 +331,16 @@
                 <h4 class="h4 service-item-title">MariaDB</h4>
               </div>
             </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/postgresql.png" alt="mariadb icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">PostgreSQL</h4>
+              </div>
+            </li>
+
           </ul>
         </section>
 
@@ -356,6 +366,15 @@
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">docker</h4>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="img/LabVIEW.svg" alt="docker icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">LabVIEW</h4>
               </div>
             </li>
           </ul>
@@ -427,6 +446,12 @@
             <li class="clients-item">
               <a href="https://github.com/" target="_blank">
                 <img src="img/github.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
+                <img src="img/MATLAB.svg" alt="client logo">
               </a>
             </li>
 
@@ -728,6 +753,16 @@
           <div class="backdrop" id="backdrop"></div>
           <ul class="project-list">
 
+            <li class="project-item  active" data-filter-item data-category="beruf" onclick="openPopup('popup6')">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="img/Industrie40.webp" alt="Todo" loading="lazy">
+              </figure>
+              <h3 class="project-title">Digitale Transformation</h3>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="privat" onclick="openPopup('popup5')">
               <figure class="project-img">
                 <div class="project-item-icon-box">
@@ -780,6 +815,45 @@
 
           </ul>
 
+          <div id="popup6" class="popup">
+            <h2>Digitale Transformation in der Industrie</h2>
+            <h4>Entwicklung eines IIoT-gestützten Systems zur digitalen Transformation der Produktion</h4><br>
+            <p><b>Projektkontext: </b>Das Projekt entstand im Rahmen beruflicher Tätigkeit sowie in der Endphase des
+              Studiums und zielte auf die digitale Transformation industrieller Prozesse. Im Fokus standen die Automatisierung
+              von Steuerungsabläufen, die zentrale Datenverarbeitung und die visuelle Aufbereitung betrieblicher
+              Informationen.<br><br>
+              <b>Technische Umsetzung:</b><br>
+            <ul>
+              <li>
+                Erweiterung und Verwaltung eines lokalen Linux-Servernetzwerks mit MySQL- und MariaDB-Datenbanken zur
+                strukturierten Speicherung von Maschinen-, Sensor- und Wartungsdaten.<br>
+              </li>
+              <li>
+                Umsetzung der Steuerungs- und Datenlogik mittels SPS-Programmierung, Python, PHP (inkl. HTML/CSS/JavaScript) sowie Shell-Skripten. Integration von Kommunikationsprotokollen wie MQTT, Modbus TCP/IP und IO-Link zur Anbindung von Steuergeräten und Sensorik.<br>
+              </li>
+              <li>Einsatz von Steuergeräten von ifm und Siemens, Raspberry Pis, Industrie-PCs sowie Tablets als HMI-Einheiten zur Interaktion mit dem System.<br></li>
+              <li>Entwicklung webbasierten Dashboards mit Grafana und ioBroker zur Echtzeitdarstellung von Maschinenzuständen, Fehlermeldungen und Wartungsinformationen. Visualisierungsdisplays und -LEDs wurden direkt in den Produktionshallen bzw. an den Maschinenanlagen installiert. (s. Bilder weiter unten)<br>
+                <li>Digitalisierung konventioneller Tätigkeiten und Anzeigen</li>
+                <li>Fehlermeldungen wurden direkt bei Entstehung an den Server übermittelt. Wartungsdaten wurden manuell gepflegt, regelmäßig generiert und automatisch verarbeitet zur Anzeige, Benachrichtigung und Abteilungszuordnung nach Deadlines.<br></li>
+                <li>Implementierung von Zugriffskontrollen und Zustandsüberwachungen zur Sicherstellung der Betriebssicherheit und zur Einhaltung interner Standards.<br></li>
+                <li>Anbindung an MES-Systeme und weitere Abteilungen zur Informationsvernetzung und zur Verbesserung der internen Kommunikation.<br><br></li>
+              </ul>
+              
+              <b>Ergebnisse & Erkenntnisse: </b>Das Projekt ermöglichte eine transparente Prozessführung, erhöhte die
+              Wartbarkeit und förderte die abteilungsübergreifende Zusammenarbeit. Es lieferte wertvolle Erkenntnisse
+              zur IT/OT-Infrastruktur und diente als praxisnahe Anwendung bestehender Kenntnisse im Bereich
+              industrieller Digitalisierung.
+            </p>
+            <br>
+            <!-- <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span> -->
+            <br>
+            <img src="img/Visualisierung.png" alt="">
+            <img src="img/Stromverlauf-Tag.png" alt="">
+            <img src="img/LED_CT60.jpg" alt="">
+          </li>
+            <button class="form-btn" onclick="closePopup('popup6')">Schließen</button>
+          </div>
+
           <div id="popup1" class="popup">
             <h2>Server-Man</h2>
             <h4>Ein Verwaltungssystem für Linux-Server</h4>
@@ -816,8 +890,7 @@
               auf diese zeigen kann. Allerdings ist dieses Projekt gescheitert, da der
               Roboter mit großen mechanischen Problemen zu kämpfen hatte. Es wurde somit ein neues Ziel definiert, bei
               der der Poppy Humanoid reine Bilderkennung durchführt und diese analysiert (Doppelpendel)
-            </p>
-            <br>
+            </p><br>
             <span><b>Rolle: </b>Programmierung der Bilderkennung und der Steuerung in Python openCv</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup3')">Schließen</button>
@@ -849,7 +922,7 @@
               Anwendung eine Übersicht über noch offene Aufgaben sowie die Möglichkeit, erledigte bzw. unerledigte
               Einträge gezielt herauszufiltern. Alle Aufgaben werden in einer MySQL-Datenbank dauerhaft gespeichert.</p>
             <br>
-            <span><b>Rolle: </b>Python Flask, Datenspeicherung mit MySQL und HTML/CSS/JavaScript</span>
+            <span><b>Tätigkeiten: </b>Python Flask, Datenspeicherung mit MySQL und HTML/CSS/JavaScript</span>
             <br>
             <button class="form-btn" onclick="closePopup('popup5')">Schließen</button>
           </div>
