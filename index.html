@@ -34,7 +34,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Ridvan Sahin">Ridvan Sahin</h1>
-          <p class="title">Software Engineer</p>
+          <p class="title">IT / Software Engineer</p>
         </div>
         <button class="info_more-btn" data-sidebar-btn>
           <span>Mehr</span>
@@ -482,7 +482,7 @@
                 <img src="img/Arduino.svg" alt="client logo">
               </a>
             </li>
-            
+
             <li class="clients-item">
               <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
                 <img src="img/MATLAB.svg" alt="client logo">
@@ -792,7 +792,9 @@
                 <div class="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
-                <img src="img/Industrie40.webp" alt="Todo" loading="lazy">
+                <img src="img/Cover-Hausverwalter.png"
+                  style="max-width: 100%; height: 100%; object-fit: contain; background-color: whitesmoke;" alt="Todo"
+                  loading="lazy">
               </figure>
               <h3 class="project-title">Haushaltsverwalter auf Linux Rocky 10 (LAMP-Stack)</h3>
             </li>
@@ -861,46 +863,156 @@
 
           <div id="popup7" class="popup">
             <h2>Hausverwaltungssystem auf Linux Rocky 10 (LAMP-Stack)</h2>
-            <h4>Ein Verwaltungssystem für Linux-Server</h4>
-            <p>Es wurde eine Webpage erstellt, welche eine Liste von den Servern
-              beinhaltet. Als Option zur Verwaltung können neue Server hinzugefügt oder die bestehenden entfernt oder
-              bearbeitet werden. Zusätzlich wurde in einer Detailansicht Informationen wie CPU-Auslastung, RAM, SWAP und
-              weiteres graphisch visualisiert. Als eine Extrafunktion wurde ein Terminal für die Befehle integriert.</p>
+            <u>
+              <h3>Zielsetzung:</h3><br>
+            </u>
+            <p>Ziel dieses Projekts ist der Aufbau einer sicheren, modularen und lokal gehosteten Serverinfrastruktur
+              zur Entwicklung einer privaten Haushaltsverwaltungsplattform. Die Plattform soll Familienmitgliedern
+              ermöglichen, zentrale Aufgaben des Alltags digital zu organisieren – darunter Dokumentenspeicherung,
+              Einkaufslisten, Kalenderfunktionen und Smart-Home-Steuerung.</p><br>
+            <p>Das Projekt gliedert sich in zwei Hauptbereiche: </p><br>
+            <ol>
+              <li><b>Technische Infrastsruktur: </b>Aufbau eines virtualisierten Linux-Servers mit containerisiertem
+                LAMP-Stack, VPN-Zugriff, Firewall-Schutz und Datenbank-Backup.</li>
+              <li><b>Haushaltsverwaltungsplattform: </b> Entwicklung einer webbasierten Anwendung zur Organisation und
+                Verwaltung von alltäglichen Haushaltsdaten oder -prozessen.</li>
+            </ol>
             <br>
-            <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span>
-            <br>
-            <button class="form-btn" onclick="closePopup('popup1')">Schließen</button>
-          </div>
+            <u>
+              <h3>Technische Umsetzung: </h3><br>
+            </u>
+            <p>
+            <h4>1. Virtualisierung & Betriebssystem</h4>
+            <ul>
+              <li>Verwendung von <strong>VMware Workstation Pro</strong> zur lokalen Virtualisierung</li>
+              <li>Installation von <strong>Rocky Linux 10</strong> als stabiles Betriebssystem, welches geeignet für
+                DIY-Projekte ist
+              </li>
+            </ul>
+            <h4>2. Containerisierung & Dienste</h4>
+            <ul>
+              <li>Einrichtung eines <strong>LAMP-Stacks</strong> (Linux, Apache, MariaDB, PHP) in separaten Containern
+              </li>
+              <li>Containerisierung für bessere Wartbarkeit und Skalierbarkeit</li>
+              <li>Geplante Erweiterung um zusätzliche Dienste:
+                <ul>
+                  <li>Monitoring (z. B. Prometheus, Grafana)</li>
+                  <li>Backup-Container</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>3. Netzwerksicherheit & Zugriff</h4>
+            <ul>
+              <li>Geplante <strong>Firewall-Konfiguration</strong> mit <code>firewalld</code> zur Absicherung der
+                Dienste</li>
+              <li>Einrichtung eines <strong>VPN-Zugangs</strong> (z. B. WireGuard) für sicheren Remote-Zugriff</li>
+              <li>Benutzer- und Rechteverwaltung zur Zugriffskontrolle</li>
+            </ul>
+            <h4>4. Datenbank & Datensicherung</h4>
+            <ul>
+              <li>Einsatz von <strong>MySQL</strong> zur strukturierten Datenspeicherung</li>
+              <li>Konzeption eines <strong>automatisierten Backup-Konzepts</strong> (lokal & remote)</li>
+              <li>Verschlüsselung sensibler Daten und Zugriffsschutz</li>
+              <li>Modularer Aufbau der Datenbank für spätere Erweiterung</li>
+            </ul>
+            </p><br>
+            <u>
+              <h3>Geplante Funktionen in der Webanwendung: </h3><br>
+            </u>
+            <ul>
+              <li><b>Einkaufsliste: </b>zentrale Verwaltung und Synchronisation zwischen verschiedenen Geräten</li>
+              <li><b>Kalender & Terminverwaltung: </b>gemeinsame Planung mit Erinnerungsfunktionen</li>
+              <li><b>Smart-Home-Integration: </b>Steuerung von Geräten</li>
+              <li><b>Dokumenten- und Bilderarchiv: </b>strukturierte Ablage für die Familie</li>
+            </ul><br>
 
+            <u>
+              <h3>Aktueller Stand: </h3><br>
+            </u>
+            <table>
+              <thead>
+                <tr>
+                  <th>Bereich</th>
+                  <th>Status</th>
+                  <!-- <th>Beschreibung</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OS & Virtualisierung</td>
+                  <td>✅ Abgeschlossen</td>
+                  <!-- <td>Rocky Linux 10 läuft stabil unter VMware</td> -->
+                </tr>
+                <tr>
+                  <td>LAMP-Stack in Containern</td>
+                  <td>✅ Abgeschlossen</td>
+                  <!-- <td>Apache, MySQL und PHP sind separat eingerichtet und zugriffsbereit</td> -->
+                </tr>
+                <tr>
+                  <td>Datenbankstruktur</td>
+                  <td>🔄 In Arbeit</td>
+                </tr>
+                <tr>
+                  <td>Webanwendung</td>
+                  <td>🔄 In Arbeit</td>
+                </tr>
+                <tr>
+                  <td>VPN-Zugang</td>
+                  <td>🔜 Geplant</td>
+                </tr>
+                <tr>
+                  <td>Firewall-Konfiguration</td>
+                  <td>🔜 Geplant</td>
+                </tr>
+                <tr>
+                  <td>Backup-Konzept</td>
+                  <td>🔜 Geplant</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="form-btn" onclick="closePopup('popup7')">Schließen</button>
+          </div>
 
           <div id="popup6" class="popup">
             <h2>Digitale Transformation in der Industrie</h2>
             <h4>Entwicklung eines IIoT-gestützten Systems zur digitalen Transformation der Produktion</h4><br>
-            <p><b>Projektkontext: </b>Das Projekt entstand im Rahmen beruflicher Tätigkeit sowie in der Endphase des
-              Studiums und zielte auf die digitale Transformation industrieller Prozesse. Im Fokus standen die Automatisierung
-              von Steuerungsabläufen, die zentrale Datenverarbeitung und die visuelle Aufbereitung betrieblicher
-              Informationen.<br><br>
-              <b>Technische Umsetzung:</b><br>
+            <u>
+              <p><b>Projektkontext: </b>
+            </u><br>Das Projekt entstand im Rahmen beruflicher Tätigkeit sowie in der Endphase des
+            Studiums und zielte auf die digitale Transformation industrieller Prozesse. Im Fokus standen die
+            Automatisierung
+            von Steuerungsabläufen, die zentrale Datenverarbeitung und die visuelle Aufbereitung betrieblicher
+            Informationen.<br><br>
+            <u><b>Technische Umsetzung:</b><br></u>
             <ul>
               <li>
                 Erweiterung und Verwaltung eines lokalen Linux-Servernetzwerks mit MySQL- und MariaDB-Datenbanken zur
                 strukturierten Speicherung von Maschinen-, Sensor- und Wartungsdaten.<br>
               </li>
               <li>
-                Umsetzung der Steuerungs- und Datenlogik mittels SPS-Programmierung, Python, PHP (inkl. HTML/CSS/JavaScript) sowie Shell-Skripten. Integration von Kommunikationsprotokollen wie MQTT, Modbus TCP/IP und IO-Link zur Anbindung von Steuergeräten und Sensorik.<br>
+                Umsetzung der Steuerungs- und Datenlogik mittels SPS-Programmierung, Python, PHP (inkl.
+                HTML/CSS/JavaScript) sowie Shell-Skripten. Integration von Kommunikationsprotokollen wie MQTT, Modbus
+                TCP/IP und IO-Link zur Anbindung von Steuergeräten und Sensorik.<br>
               </li>
-              <li>Einsatz von Steuergeräten von ifm und Siemens, Raspberry Pis, Industrie-PCs sowie Tablets als HMI-Einheiten zur Interaktion mit dem System.<br></li>
-              <li>Entwicklung webbasierten Dashboards mit Grafana und ioBroker zur Echtzeitdarstellung von Maschinenzuständen, Fehlermeldungen und Wartungsinformationen. Visualisierungsdisplays und -LEDs wurden direkt in den Produktionshallen bzw. an den Maschinenanlagen installiert. (s. Bilder weiter unten)<br>
-                <li>Digitalisierung konventioneller Tätigkeiten und Anzeigen</li>
-                <li>Fehlermeldungen wurden direkt bei Entstehung an den Server übermittelt. Wartungsdaten wurden manuell gepflegt, regelmäßig generiert und automatisch verarbeitet zur Anzeige, Benachrichtigung und Abteilungszuordnung nach Deadlines.<br></li>
-                <li>Implementierung von Zugriffskontrollen und Zustandsüberwachungen zur Sicherstellung der Betriebssicherheit und zur Einhaltung interner Standards.<br></li>
-                <li>Anbindung an MES-Systeme und weitere Abteilungen zur Informationsvernetzung und zur Verbesserung der internen Kommunikation.<br><br></li>
-              </ul>
-              
-              <b>Ergebnisse & Erkenntnisse: </b>Das Projekt ermöglichte eine transparente Prozessführung, erhöhte die
-              Wartbarkeit und förderte die abteilungsübergreifende Zusammenarbeit. Es lieferte wertvolle Erkenntnisse
-              zur IT/OT-Infrastruktur und diente als praxisnahe Anwendung bestehender Kenntnisse im Bereich
-              industrieller Digitalisierung.
+              <li>Einsatz von Steuergeräten von ifm und Siemens, Raspberry Pis, Industrie-PCs sowie Tablets als
+                HMI-Einheiten zur Interaktion mit dem System.<br></li>
+              <li>Entwicklung webbasierten Dashboards mit Grafana und ioBroker zur Echtzeitdarstellung von
+                Maschinenzuständen, Fehlermeldungen und Wartungsinformationen. Visualisierungsdisplays und -LEDs wurden
+                direkt in den Produktionshallen bzw. an den Maschinenanlagen installiert. (s. Bilder weiter unten)<br>
+              <li>Digitalisierung konventioneller Tätigkeiten und Anzeigen</li>
+              <li>Fehlermeldungen wurden direkt bei Entstehung an den Server übermittelt. Wartungsdaten wurden manuell
+                gepflegt, regelmäßig generiert und automatisch verarbeitet zur Anzeige, Benachrichtigung und
+                Abteilungszuordnung nach Deadlines.<br></li>
+              <li>Implementierung von Zugriffskontrollen und Zustandsüberwachungen zur Sicherstellung der
+                Betriebssicherheit und zur Einhaltung interner Standards.<br></li>
+              <li>Anbindung an MES-Systeme und weitere Abteilungen zur Informationsvernetzung und zur Verbesserung der
+                internen Kommunikation.<br><br></li>
+            </ul>
+
+            <b>Ergebnisse & Erkenntnisse: </b>Das Projekt ermöglichte eine transparente Prozessführung, erhöhte die
+            Wartbarkeit und förderte die abteilungsübergreifende Zusammenarbeit. Es lieferte wertvolle Erkenntnisse
+            zur IT/OT-Infrastruktur und diente als praxisnahe Anwendung bestehender Kenntnisse im Bereich
+            industrieller Digitalisierung.
             </p>
             <br>
             <!-- <span><b>Rolle: </b>Frontend-Entwicklung in HTML/CSS/JavaScript</span> -->
@@ -908,7 +1020,7 @@
             <img src="img/Visualisierung.png" alt="">
             <img src="img/Stromverlauf-Tag.png" alt="">
             <img src="img/LED_CT60.jpg" alt="">
-          </li>
+            </li>
             <button class="form-btn" onclick="closePopup('popup6')">Schließen</button>
           </div>
 
@@ -1265,7 +1377,7 @@
   </main>
 
   <!-- ### letzter Stand ### -->
-  <div class="stand">letzter Aktualisierungsdatum: 08. Oktober 2025</div>
+  <div class="stand">letzter Aktualisierungsdatum: 22. Oktober 2025</div>
 
 
 
